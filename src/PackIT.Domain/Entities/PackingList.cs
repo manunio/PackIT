@@ -14,12 +14,17 @@ namespace PackIT.Domain.Entities
 
         private readonly LinkedList<PackingItem> _items = new();
 
-        public PackingList(Guid id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
+        private PackingList(PackingListId id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
+            : this(id, name, localization)
+        {
+            _items = items;
+        }
+
+        public PackingList(PackingListId id, PackingListName name, Localization localization)
         {
             Id = id;
             _name = name;
             _localization = localization;
-            _items = items;
         }
 
         public void AddItem(PackingItem item)
