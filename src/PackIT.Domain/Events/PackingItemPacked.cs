@@ -9,6 +9,6 @@ using System.Threading.Tasks;
 
 namespace PackIT.Domain.Events
 {
-    internal record PackingItemPacked(PackingList PackingList, PackingItem PackingItem) : IDomainEvent;
+    public record PackingItemPacked(PackingList PackingList, PackingItem PackingItem) : IDomainEvent;
 }
 

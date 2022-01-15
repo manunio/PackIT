@@ -4,5 +4,5 @@ using PackIT.Shared.Abstractions.Domain;
 
 namespace PackIT.Domain.Events
 {
-    internal record PackingItemAdded(PackingList PackingList, PackingItem PackingItem) : IDomainEvent;
+    public record PackingItemAdded(PackingList PackingList, PackingItem PackingItem) : IDomainEvent;
 }

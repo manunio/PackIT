@@ -5,7 +5,7 @@ using PackIT.Shared.Abstractions.Domain;
 
 namespace PackIT.Domain.Entities
 {
-    internal class PackingList : AggregateRoot<Guid>
+    public class PackingList : AggregateRoot<Guid>
     {
         public PackingListId Id { get; private set; }
 

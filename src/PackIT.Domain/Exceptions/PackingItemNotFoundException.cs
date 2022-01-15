@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace PackIT.Domain.Entities
 {
-    internal class PackingItemNotFoundException : PackITException
+    public class PackingItemNotFoundException : PackITException
     {
         public PackingItemNotFoundException(string itemName) 
             : base($"Packing item 'itemName' was not found.")

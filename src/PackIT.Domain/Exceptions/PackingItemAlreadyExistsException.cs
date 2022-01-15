@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PackIT.Domain.Exceptions
 {
-    internal class PackingItemAlreadyExistsException : PackITException
+    public class PackingItemAlreadyExistsException : PackITException
     {
 
         public string ListName { get; }

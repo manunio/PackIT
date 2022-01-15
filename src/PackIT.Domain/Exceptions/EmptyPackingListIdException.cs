@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace PackIT.Domain.Exceptions
 
 {
-    internal class EmptyPackingListIdException : PackITException
+    public class EmptyPackingListIdException : PackITException
     {
         public EmptyPackingListIdException() : base("Packing list Id cannot be empty.")
         {

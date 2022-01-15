@@ -2,7 +2,7 @@
 
 namespace PackIT.Domain.ValueObjects
 {
-    internal record PackingListName
+    public record PackingListName
     {
         public string Value { get; }
 

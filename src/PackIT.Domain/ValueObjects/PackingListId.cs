@@ -2,7 +2,7 @@
 
 namespace PackIT.Domain.ValueObjects
 {
-    internal record PackingListId
+    public record PackingListId
     {
         public Guid Value { get; }
 

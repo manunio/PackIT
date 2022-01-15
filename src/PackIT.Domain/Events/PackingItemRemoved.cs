@@ -3,5 +3,5 @@ using PackIT.Shared.Abstractions.Domain;
 
 namespace PackIT.Domain.Entities
 {
-    internal record PackingItemRemoved(PackingList PackingList, PackingItem PackingItem) : IDomainEvent;
+    public record PackingItemRemoved(PackingList PackingList, PackingItem PackingItem) : IDomainEvent;
 }
