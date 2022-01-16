@@ -66,8 +66,6 @@ namespace PackIT.Domain.Entities
             AddEvent(new PackingItemRemoved(this, item));
         }
 
-
-
         private PackingItem GetItem(string itemName)
         {
             var item = _items.SingleOrDefault(i => i.Name == itemName);
@@ -79,6 +77,5 @@ namespace PackIT.Domain.Entities
 
             return item;
         }
-
     }
 }
